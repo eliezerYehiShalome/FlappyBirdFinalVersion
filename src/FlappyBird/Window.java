@@ -7,6 +7,8 @@ public class Window extends JFrame {
         private static final int WINDOW_WIDTH =375;
     public static final int WINDOW_HEIGHT = 600;
 
+    private ImageIcon LOGO_ICON = new ImageIcon(".idea\\image1\\logo.jpeg");
+
     public static int getWindowHeight() {
         return WINDOW_HEIGHT;
     }
@@ -22,11 +24,14 @@ public class Window extends JFrame {
         this.setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
         this.setTitle("Flappy bird");
         this.setLocationRelativeTo(null);
-//        StartMenu startMenu=new StartMenu();
-//        add(startMenu);
+        this.setIconImage(LOGO_ICON.getImage());
 
-          GameSans beckgraund=new GameSans();
-          add(beckgraund);
+
+        GameSans gameSans = new GameSans();
+        add(gameSans);
+
+
+
 
 
 
